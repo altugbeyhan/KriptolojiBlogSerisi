@@ -26,5 +26,5 @@ def skytale_cozme(sifreli_metin,sarim_sayisi):
     
     print("DÜZ METİN:",duz_metin)
     
-skytale_sifreleme("İSTİKBAL GÖKLERDEDİR",4)
-skytale_cozme("İKGEDSBÖRİTAKDRİLLEX",4)
+skytale_sifreleme("GİZLİ BULUŞMA YEDİDE KONGRE MERKEZİNDE",6)
+skytale_cozme("GUYKMİİLEOENZUDNRDLŞİGKEİMDREXBAEEZX",6)
