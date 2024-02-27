@@ -1,7 +1,10 @@
 def skytale_sifreleme(duz_metin,sarim_sayisi):
     
     duz_metin = duz_metin.replace(" ","")
-    satir_sayisi = (len(duz_metin)//sarim_sayisi)+1
+    if len(duz_metin)%sarim_sayisi !=0:
+        satir_sayisi = (len(duz_metin)//sarim_sayisi)+1
+    else:
+        satir_sayisi = (len(duz_metin)//sarim_sayisi)
     doldurma_sayisi = (satir_sayisi*sarim_sayisi)-len(duz_metin)
     duz_metin += "X"*doldurma_sayisi
     sifreli_metin = ""
@@ -23,5 +26,5 @@ def skytale_cozme(sifreli_metin,sarim_sayisi):
     
     print("DÜZ METİN:",duz_metin)
     
-skytale_sifreleme("GİZLİ BULUŞMA YEDİDE KONGRE MERKEZİNDE",6)
-skytale_cozme("GUYKMİİLEOENZUDNRDLŞİGKEİMDREXBAEEZX",6)
+skytale_sifreleme("İSTİKBAL GÖKLERDEDİR",4)
+skytale_cozme("İKGEDSBÖRİTAKDRİLLEX",4)
