@@ -7,7 +7,7 @@ def coklu_alfabetik_sifreleme(duz_metin,anahtar):
     
     for i in range(len(duz_metin)):
         if duz_metin[i] in alfabe:
-            sifreli_metin += alfabe[alfabe.find(duz_metin[i])+anahtar[i%len(anahtar)]]
+            sifreli_metin += alfabe[(alfabe.find(duz_metin[i])+anahtar[i%len(anahtar)])%len(alfabe)]
         else:
             sifreli_metin += i 
             
@@ -22,7 +22,7 @@ def coklu_alfabetik_cozme(duz_metin,anahtar):
     
     for i in range(len(sifreli_metin)):
         if sifreli_metin[i] in alfabe:
-            duz_metin += alfabe[alfabe.find(sifreli_metin[i])-anahtar[i%len(anahtar)]]
+            duz_metin += alfabe[(alfabe.find(sifreli_metin[i])-anahtar[i%len(anahtar)])%len(alfabe)]
         else:
             duz_metin += i 
             
